@@ -1,4 +1,4 @@
-const BASE = '';
+const BASE = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '');
 
 function token() { return localStorage.getItem('em_token') || ''; }
 export function setToken(t) { if (t) localStorage.setItem('em_token', t); else localStorage.removeItem('em_token'); }
