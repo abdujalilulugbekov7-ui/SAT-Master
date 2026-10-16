@@ -1,13 +1,27 @@
-const BASE = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '');
+// VITE_API_URL — backend manzili, masalan: https://sizning-backend.onrender.com
+// Oxiridagi / olib tashlanadi. Bo'sh bo'lsa — relative /api ishlatiladi (dev dagi proxy uchun).
+const BASE = (import.meta.env.VITE_API_URL || '').trim().replace(/\/$/, '');
 
 function token() { return localStorage.getItem('em_token') || ''; }
 export function setToken(t) { if (t) localStorage.setItem('em_token', t); else localStorage.removeItem('em_token'); }
 
+// Debug: production da qaysi URL ga urilayotganini konsolda ko'rish uchun
+if (typeof window !== 'undefined' && !BASE && window.location.hostname !== 'localhost') {
+  console.warn('[api] VITE_API_URL bo‘sh! So‘rovlar', window.location.origin + '/api/... ga ketadi. Backend alohida domenda bo‘lsa failed to fetch bo‘ladi.');
+}
+
 async function req(path, opts = {}) {
-  const r = await fetch(BASE + path, {
-    ...opts,
-    headers: { 'Content-Type': 'application/json', ...(token() ? { Authorization: 'Bearer ' + token() } : {}), ...(opts.headers || {}) },
-  });
+  const url = BASE + path;
+  let r;
+  try {
+    r = await fetch(url, {
+      ...opts,
+      headers: { 'Content-Type': 'application/json', ...(token() ? { Authorization: 'Bearer ' + token() } : {}), ...(opts.headers || {}) },
+    });
+  } catch (e) {
+    console.error('[api] fetch xato:', url, e);
+    throw new Error('Serverga ulanib bo‘lmadi (failed to fetch). Backend manzili (VITE_API_URL) noto‘g‘ri yoki server o‘chiq: ' + url);
+  }
   const data = await r.json().catch(() => ({}));
   if (!r.ok) throw new Error(data.message || 'Xatolik');
   return data;
