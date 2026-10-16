@@ -1,0 +1,16 @@
+{
+  "name": "edumaster-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EduMaster MERN - root runner",
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,green \"npm --prefix mern/backend run dev\" \"npm --prefix mern/frontend run dev\"",
+    "dev:backend": "npm --prefix mern/backend run dev",
+    "dev:frontend": "npm --prefix mern/frontend run dev",
+    "install:all": "npm --prefix mern/backend install && npm --prefix mern/frontend install && npm install",
+    "build": "npm --prefix mern/frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}

@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Env / secrets — HECH QACHON commit qilinmasin
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temp
+opencode/
+tmp/
+temp/

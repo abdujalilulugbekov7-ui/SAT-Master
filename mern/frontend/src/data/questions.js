@@ -1,0 +1,105 @@
+export const SAT_EN = [
+["Choose the word closest in meaning to abundant:",["Scarce","Plentiful","Empty","Weak"],1],
+["Neither the teacher nor the students ___ aware of the change.",["Either/or","Neither/nor","Both/and","Whether/or"],1],
+["The scientist hypothesis was ___ by the experimental results.",["refuted","confirmed","ignored","delayed"],1],
+["Synonym of rapid:",["Slow","Swift","Calm","Late"],1],
+["She has lived here ___ 2019.",["since","for","from","at"],0],
+["Which sentence is grammatically correct?",["He don’t like apples.","He doesn’t likes apples.","He doesn’t like apples.","He not like apples."],2],
+["Antonym of ancient:",["Old","Modern","Antique","Historic"],1],
+["If I ___ more time, I would finish the project.",["have","had","has","having"],1],
+["The word benevolent means:",["Cruel","Kind","Rich","Strict"],1],
+["___ you ever ___ to Samarkand?",["Did/go","Have/been","Has/be","Are/go"],1],
+["Choose the correct article: ___ honest man.",["A","An","The","No article"],1],
+["The report, along with the charts, ___ submitted yesterday.",["were","was","are","be"],1],
+["Ephemeral most nearly means:",["Everlasting","Short-lived","Bright","Heavy"],1],
+["Neither of the answers ___ correct.",["are","were","is","be"],2],
+["He congratulated me ___ my success.",["for","on","at","about"],1],
+["Passive form: She wrote a letter.",["A letter was written by her.","A letter is wrote by her.","A letter were written.","She was wrote."],0],
+["Synonym of diligent:",["Lazy","Hardworking","Careless","Tired"],1],
+["I look forward ___ from you soon.",["to hear","to hearing","hear","hearing"],1],
+["Which is a complex sentence?",["I ran fast.","Because it rained, we stayed home.","Dogs bark loudly.","She sings."],1],
+["Pragmatic means:",["Practical","Dreamy","Strict","Emotional"],0],
+["Hardly ___ entered when the phone rang.",["I had","had I","I have","have I"],1],
+["Choose the misspelled word:",["Occasion","Separate","Definately","Believe"],2],
+["She is good ___ mathematics.",["in","at","for","on"],1],
+["Reluctant means:",["Willing","Unwilling","Happy","Quick"],1],
+["By the time we arrived, the film ___.",["started","had started","starts","has started"],1],
+["Which punctuation is correct?",["Its a nice day.","It’s a nice day.","Its’ a nice day.","It,s a nice day."],1],
+["Meticulous is closest to:",["Careless","Careful","Fast","Loud"],1],
+["Not only ___ late, but he also forgot his books.",["he was","was he","is he","he is"],1],
+["I wish I ___ speak English fluently.",["can","could","will","shall"],1],
+["The committee ___ divided on this issue.",["is","are","was","has"],1]];
+
+export const SAT_MATH = [
+["If 3x + 7 = 22, what is x?",["3","5","7","15"],1],
+["What is 15% of 200?",["20","25","30","35"],2],
+["Slope of line through (2,3) and (6,11)?",["1","2","3","4"],1],
+["If f(x)=x²-4, f(3)=?",["2","5","9","13"],1],
+["Sum of angles in a triangle?",["90 deg","180 deg","270 deg","360 deg"],1],
+["Solve: 2(x-3)=10",["5","8","6","7"],1],
+["What is the square root of 144?",["10","11","12","14"],2],
+["A rectangle 8x5 has area:",["13","26","40","45"],2],
+["If y=2x+1 and x=4, y=?",["7","8","9","10"],2],
+["Median of 3,7,9,12,15?",["7","9","12","10"],1],
+["Simplify: (x³)(x⁴)",["x⁷","x¹²","2x⁷","x⁶"],0],
+["Probability of heads in a coin toss?",["1/4","1/3","1/2","1"],2],
+["Circle radius 7, circumference approx?",["22","44","154","14"],1],
+["If 5ⁿ=125, n=?",["2","3","4","5"],1],
+["What is 7² - 3²?",["16","40","49","20"],1],
+["A train travels 120 km in 2h, speed?",["40 km/h","60 km/h","80 km/h","100 km/h"],1],
+["Solve inequality: 2x>10",["x>5","x<5","x>20","x=5"],0],
+["Hypotenuse of 6-8 triangle?",["10","12","14","9"],0],
+["What is 0.75 as fraction?",["1/4","1/2","3/4","7/5"],2],
+["Mean of 10,20,30?",["15","20","25","30"],1],
+["If a/b=3 and b=4, a=?",["7","12","3","1"],1],
+["Expand (x+2)(x+3)",["x²+5x+6","x²+6x+5","2x+5","x²+5"],0],
+["20% discount on $80?",["$60","$64","$70","$72"],1],
+["Next prime after 13?",["15","17","19","21"],1],
+["log10(1000)=?",["2","3","4","10"],1],
+["Volume of cube side 4?",["16","48","64","32"],2],
+["If 2ˣ=32, x=?",["4","5","6","3"],1],
+["Distance between (0,0) and (3,4)?",["5","6","7","25"],0],
+["A box has 3 red, 5 blue balls. P(red)?",["3/8","5/8","3/5","1/2"],0],
+["If x+y=10 and x-y=4, x=?",["3","7","6","8"],1]];
+
+export const IE_READING = { passage: 'Sleep is essential for human health. Scientists believe that during sleep the brain organises memories. Adults need 7-9 hours of sleep. Lack of sleep can cause poor concentration, weak immunity and stress. Short naps of 20 minutes can improve alertness. Oxford: good sleepers learn languages 30% faster...', qs: [
+["According to the passage, the brain ___ during sleep.",["rests completely","organises memories","stops working","dreams only"],1],
+["How much sleep do adults need?",["5-6 hours","7-9 hours","10 hours","4 hours"],1],
+["Lack of sleep can cause:",["better memory","poor concentration","strong immunity","happiness"],1],
+["Short naps of 20 minutes can:",["harm health","improve alertness","cause stress","replace night sleep"],1],
+["Oxford researchers found good sleepers learn languages ___ faster.",["10%","20%","30%","50%"],2],
+["The word essential is closest to:",["optional","necessary","difficult","rare"],1],
+["Which is TRUE?",["Naps are useless","Sleep affects immunity","Adults need 4 hours","Sleep stops memory"],1],
+["The passage is mainly about:",["dreams","importance of sleep","Oxford city","languages"],1],
+["Alertness means:",["tiredness","being awake and aware","illness","hunger"],1],
+["Best title:",["Why We Dream","The Secret of Sleep","How to Study","Oxford Study"],1]]};
+
+export const IE_LISTEN = { audio: 'Good morning. This is the city library. We open Monday to Friday from 9 AM to 6 PM, and Saturday from 10 AM to 2 PM. New members need an ID card and a photo. Borrowing books is free for 3 weeks...', qs: [
+["Library opens Monday-Friday at:",["8 AM","9 AM","10 AM","11 AM"],1],
+["Saturday closing time:",["12 PM","2 PM","4 PM","6 PM"],1],
+["New members need:",["only money","ID card and photo","passport only","nothing"],1],
+["Borrowing period:",["1 week","2 weeks","3 weeks","1 month"],2],
+["Library is closed on:",["Saturday","Sunday","Friday","Monday"],1],
+["Borrowing books is:",["paid","free","expensive","limited to staff"],1],
+["Borrow means:",["buy","take and return","steal","keep"],1],
+["You hear this at:",["school","library","bank","hospital"],1],
+["Opening days total per week:",["5","6","7","4"],1],
+["ID card is needed for:",["entering","new membership","reading inside","parking"],1]]};
+
+export const IE_WRITING = [
+'Task 1: The chart shows electricity use in Uzbekistan by season. Summarise (150+ so‘z).',
+'Task 2: Studying abroad vs staying home. Discuss both views, give opinion (250+ so‘z).'];
+
+export const IE_SPEAK = [
+'Part 1: Tell me about your hometown.',
+'Part 1: Do you like reading? What books?',
+'Part 2 (Cue card, 2 min): Describe a teacher who inspired you.',
+'Part 3: How has education changed in 20 years?',
+'Part 3: Will AI replace teachers? Why?'];
+
+export const PLANS = {
+  free: { name: 'FREE', price: 0, hearts: 3 },
+  pro: { name: 'PRO', price: 39990, hearts: 5 },
+  max: { name: 'MAX', price: 59990, hearts: 10 },
+  ultra: { name: 'ULTRA', price: 99990, hearts: 9999 },
+};
